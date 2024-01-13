@@ -1,0 +1,33 @@
+$ docker init
+
+Welcome to the Docker Init CLI!
+
+This utility will walk you through creating the following files with sensible defaults for your project:
+  - .dockerignore
+  - Dockerfile
+  - compose.yaml
+  - README.Docker.md
+
+Let's get started!
+
+? What application platform does your project use? Go
+X Sorry, your reply was invalid: Value is required
+? What version of Go do you want to use? 1.21.0
+X Sorry, your reply was invalid: Value is required
+? What's the relative directory (with a leading .) of your main package? .
+? What port does your server listen on? 9000
+
+CREATED: .dockerignore
+CREATED: Dockerfile
+CREATED: compose.yaml
+CREATED: README.Docker.md
+
+✔ Your Docker files are ready!
+
+Take a moment to review them and tailor them to your application.
+
+When you're ready, start your application by running: docker compose up --build
+
+Your application will be available at http://localhost:9000
+
+Consult README.Docker.md for more information about using the generated files.

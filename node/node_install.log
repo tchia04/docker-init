@@ -1,0 +1,38 @@
+$ docker init
+
+Welcome to the Docker Init CLI!
+
+This utility will walk you through creating the following files with sensible defaults for your project:
+  - .dockerignore
+  - Dockerfile
+  - compose.yaml
+  - README.Docker.md
+
+Let's get started!
+
+? What application platform does your project use? Node
+? What version of Node do you want to use? 14.18.2
+? Which package manager do you want to use? npm
+X Sorry, your reply was invalid: Value is required
+? What command do you want to use to start the app? node app.js
+X Sorry, your reply was invalid: Value is required
+? What port does your server listen on? 9999
+
+CREATED: .dockerignore
+CREATED: Dockerfile
+CREATED: compose.yaml
+CREATED: README.Docker.md
+
+✔ Your Docker files are ready!
+
+Take a moment to review them and tailor them to your application.
+
+WARNING: The following files required to run your application were not found. Be sure to create them before running your application:
+  - package.json
+  - package-lock.json
+
+When you're ready, start your application by running: docker compose up --build
+
+Your application will be available at http://localhost:9999
+
+Consult README.Docker.md for more information about using the generated files.

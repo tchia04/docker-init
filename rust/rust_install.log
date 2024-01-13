@@ -1,0 +1,32 @@
+docker init
+
+Welcome to the Docker Init CLI!
+
+This utility will walk you through creating the following files with sensible defaults for your project:
+  - .dockerignore
+  - Dockerfile
+  - compose.yaml
+  - README.Docker.md
+
+Let's get started!
+
+? What application platform does your project use? Rust
+? What version of Rust do you want to use? 1.71.0
+? What port does your server listen on? 7878
+
+CREATED: .dockerignore
+CREATED: Dockerfile
+CREATED: compose.yaml
+CREATED: README.Docker.md
+
+✔ Your Docker files are ready!
+
+Take a moment to review them and tailor them to your application.
+
+WARNING: Cargo.lock was not found but is required to run your application. You can create it by running cargo generate-lockfile
+
+When you're ready, start your application by running: docker compose up --build
+
+Your application will be available at http://localhost:7878
+
+Consult README.Docker.md for more information about using the generated files.

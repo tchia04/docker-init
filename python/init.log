@@ -1,0 +1,31 @@
+$ docker init
+
+Welcome to the Docker Init CLI!
+
+This utility will walk you through creating the following files with sensible defaults for your project:
+  - .dockerignore
+  - Dockerfile
+  - compose.yaml
+  - README.Docker.md
+? What application platform does your project use? Python
+? What version of Python do you want to use? 3.8.0
+? What port do you want your app to listen on? 8000
+X Sorry, your reply was invalid: Value is required
+? What is the command to run your app (e.g., gunicorn 'myapp.example:app' --bind=0.0.0.0:8000)? gunicorn 'myapp.example:app' --bind=0.0.0.0:8000
+
+CREATED: .dockerignore
+CREATED: Dockerfile
+CREATED: compose.yaml
+CREATED: README.Docker.md
+
+✔ Your Docker files are ready!? Let us know!
+  Quit
+Take a moment to review them and tailor them to your application.
+
+WARNING: No requirements.txt file found. Be sure to create one that contains the dependencies for your application, including an entry for the gunicorn package, before running your application.
+
+When you're ready, start your application by running: docker compose up --build
+
+Your application will be available at http://localhost:8000
+
+Consult README.Docker.md for more information about using the generated files.
